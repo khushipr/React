@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    line-height: 1.5;
+    font-size: 0.875rem;
+    background: 	#f1f5f8;
+    color: #102a42;
+}
+*::before,::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: 	#617d98;
+}
+main{
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+}
+.section{
+  max-width: 600px;
+  width: 90vw;
+  margin: 0 auto;
+}
+.container{
+  width: 80vw;
+  max-width: 600px;
+}
+.title{
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+}
+.underline{
+  height: 0.25rem;
+  width: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: 	#49a6e9;
+}
+.review{
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 0.25rem;
+  text-align: center;
+  transition: all linear 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.image-container{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+.person-img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+.image-container::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #49a6e9;
+  border-radius: 50%;
+  top: -0.25rem;
+  right: -0.5rem;
+}
+.quote-icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  background: #49a6e9;
+  color: white;
+  border-radius: 50%;
+  place-items: center;
+  transform: translateY(25%);
+}
+.author{
+  margin-bottom: 0.25rem;
+}
+.job{
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: #49a6e9;
+}
+.text{
+  margin-bottom: 0.75rem;
+}
+.prev-btn,
+.next-btn{
+  color: 	#8bcbf9;
+  font-size: 1.25rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  margin: 0 0.5rem;
+}
+.prev-btn:hover,
+.next-btn:hover {
+  color: #49a6e9;
+}
+.random-btn{
+  color: #49a6e9;
+  background: #ebf7ff;
+  transition: all 0.3s linear;
+  border-color: transparent;
+  text-transform: capitalize;
+  margin-top: 0.25rem;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+.random-btn:hover{
+  background: #49a6e9;
+  color: 	#063251;
+}
